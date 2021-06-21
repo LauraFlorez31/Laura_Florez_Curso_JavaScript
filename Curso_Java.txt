@@ -1,0 +1,311 @@
+<html>
+public class Program
+{
+    public static void main(String[] args) {
+        System.out.println(SENA);
+	}
+}
+
+// para los comentarios de solo una linea //
+
+/* para los comentarios
+   de varias lineas */
+
+/ ** para los comentarios estilo javadoc, encierra en cuadro */
+
+class Ejem1
+{
+    public static void main(String[] args) {
+        String name="Laura";
+        int age = 17;
+        double score = 156.0;
+	}
+}
+
+int suma1 = 15 + 31;
+int suma2 = suma1 + 22;
+int suma3 = suma1 - suma2;
+int a = 31;
+++a;
+System.out.println(a);
+
+int x = 24;
+if
+ ( x == 24 ) {
+System.out.println("ejem");
+}
+
+int day = 3;
+switch(day) {
+ case 1:
+   System.out.println("Monday");
+   break;
+ case 2:
+   System.out.println("Tuesday");
+   break:
+   case 3:
+   System.out.println("Wednesday");
+}
+
+if (age > 16) {
+  System.out.println("Hola!");
+}
+
+int x = 12;
+while (x >8) {
+System.out.println ("Ejem-While");
+x++; }
+
+for (int c = 4; i < 8; c++) {
+ System.out.println("Ejem-for");
+}
+
+int[ ] arrays = new int[5];
+
+arr[6] = 82;
+
+String [ ] Ejeminta = {"L", "A", "U"};
+System.out.println(Ejeminta [4]);
+
+int[ ] intArr = new int[5];
+System.out.println(intArr.length);
+
+int [ ] ejeMA = {8, 44, 5, 9};
+int sum=0;
+for(int x=0; x<ejeMA.length; x++) {
+   sum += ejeMA[x];
+}
+System.out.println(sum);
+ 
+int[ ] primes = {2, 3, 5, 7};
+for (int t: primes) {
+  System.out.println(t);
+}
+
+// multidimencional
+
+int[ ][ ] sample = { {1, 2, 3}, {4, 5, 6} };
+int x = sample[1][0];
+System.out.println(x);
+
+public class Methods {
+   static void Laura() {
+     System.out.println("Laura");
+   }
+  public static void main(String[ ] args) {
+  Laura();
+  }
+}
+
+public class Calling {
+   static void Florez() {
+     System.out.println("Florez");
+   }
+  public static void main(String[ ] args) {
+  Florez();
+  Florez();
+  Florez();
+  }
+}
+
+public class Parameters {
+   static void sayHello(String name) {
+     System.out.println("Hello" + name);
+   }
+  public static void main(String[ ] args) {
+  sayHello("Laura");
+  sayHello("Florez");
+  }
+}
+
+public class Retsum {
+   static int sum(int val1, int val2){
+     return val1 + val2;
+   }
+  public static void main(String[ ] args) {
+  int x = sum(2, 5);
+   System.out.println(x);
+  }
+}
+
+// Objeto
+
+public class object1 {
+ public static vois main(string[ ] args) {
+   Animal cat = new Animal();
+    cat.bark();
+   }
+}
+
+// Atributos definicion
+
+public class Vehicle {
+  int maxSpeed;
+  int wheels;
+  String color;
+  double fuelCapacity;  
+
+  void horn() {
+    System.out.println("Beep!");
+  }  
+}
+
+// constructor
+
+public class Bicicleta {
+  private String color;
+   Bicicleta() {
+     color = "Black";
+   }
+}
+
+
+
+public class Vehicle {
+  private String color;
+
+  // Getter 1
+  public String getColor() {
+    return color;
+  }
+
+ // Setter 1
+  public void setColor(String c) {
+    this.color = c;
+  }
+}
+
+// Type reference
+
+public class TypRe {
+  public static void main(String[ ]args) {
+   Person l;
+   l = new Person(""Laura);
+   l.setAge(17);
+   celebrateBirthday(l);
+   System.out.println(l.getAge());
+  }
+ static vois celbrateBirthday(Person p) {
+   p.setAge(p.getAge() + 1);
+ }
+}
+
+// importar lo tipos
+
+import java.awt.*;
+
+// Excepciones
+
+public class Excep {
+ public static void main(String[ ] args) {
+   try {
+    int a[ ] = new int[2];
+    System.out.println(a[5]);
+   } catch (Exception e) {
+     System.out.println("An error ocurred");
+   }
+  }
+}
+
+// Ejem Throw
+
+public void do(int x)
+ throws IOException {
+ if (x<0)
+ }
+  throw new IOException();
+ }
+}
+
+// Ejem Threads
+
+class Th extends Thread {
+  public void run() {
+    System.out.println("ejemt");
+  }
+}
+class EjemTh {
+  public static void main(String[ ] args) {
+   Th obj = new Th();
+   obj.start();
+  }
+}
+
+// ArrayList_Acesso rapido a datos
+
+ArrayList<Integer> ar =
+  new ArrayList<Integer>(9);
+
+// LinkedList_Gran cantidad de inserciones y eliminarlos 
+   
+   LinkedList <String> list =
+    new LinkedList <String>();
+   list.add("Sena");
+   System.out.println(list.get(0));
+
+// HashMap
+
+import java.util.HashMap;
+ public class EjemHM {
+  public static void main(String[ ] args) {
+    HashMap<String, Integer> points = new
+ HashMap<String, Integer>();
+    points.put("Sara", 223);
+    points.put("Chris", 178);
+    System.out.println(points.get("Sara"));
+ }
+}
+
+// Sorting Lists
+
+List<String> list = new ArrayList<String>();
+list.add("b");
+list.add("a");
+list.add("c");
+Collections.sort(list);
+System.out.println(list.get(0));
+
+// Files
+
+import java.io.File;
+
+public class EjemF {
+  public static void main(String[ ] args) {
+    File x = new File("C:\\ejem\\test.txt");
+    if(x.exists()) {
+     System.out.println(x.getName() +  "exists!");
+    }
+    else { 
+     System.out.println("The file does not exist");
+    }
+  }
+}
+
+// Read Files
+
+try {
+  File x = new File("C:\\EjemF\\test.txt");
+  Scanner sc = new Scanner(x);      
+  while(sc.hasNext()) {
+    System.out.println(sc.next());
+  }
+  sc.close();
+} catch (FileNotFoundException e) {
+  System.out.println("Error");
+}
+
+//Creating Files
+
+import java.util.Formatter;
+
+public class MyClass {
+   public static void main(String[ ] args) {
+  try {
+    Formatter f = new Formatter("C:\\sololearn\\test.txt");
+  } catch (Exception e) {
+      System.out.println("Error");
+  }
+  }
+}
+
+</html>
